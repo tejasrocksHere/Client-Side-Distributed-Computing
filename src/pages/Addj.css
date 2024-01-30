@@ -1,0 +1,50 @@
+/* Addj.css */
+
+/* Style for the category select box */
+.select-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .category-select {
+    width: 100%; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    z-index: 1; /* Adjust the z-index to control visibility */
+  }
+  
+  /* Style for the options dropdown */
+  .category-options {
+    position: absolute;
+    top: 100%; /* Position it below the select box */
+    left: 0;
+    width: 100%;
+    max-height: 150px; /* Limit the height of the dropdown */
+    overflow-y: auto; /* Add a scrollbar if needed */
+    border: 1px solid #ccc;
+    border-top: none; /* Hide the top border */
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+    color: #333;
+    display: none; /* Initially, hide the options */
+  }
+  
+  /* Show the options when the select box is clicked */
+  .select-container.active .category-options {
+    display: block;
+  }
+  
+  /* Style for individual option items */
+  .category-option {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .category-option:hover {
+    background-color: #f0f0f0;
+  }
+  

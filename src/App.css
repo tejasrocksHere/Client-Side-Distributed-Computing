@@ -1,0 +1,40 @@
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #212121;
+}
+
+/* Style the video container */
+.background-video {
+  position: relative; /* Relative positioning for overlay content */
+  width: 100%;
+  height: auto;
+}
+
+/* Style the video element */
+#video-bg {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the video covers the entire container */
+}
+
+/* Style the content on top of the video */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Place it above the video */
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Additional styles can be added as needed */
